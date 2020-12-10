@@ -1,0 +1,158 @@
+html{min-height: 100%;}
+
+body{
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0;
+	padding: none;
+	min-height: 100%;
+	position: relative;
+	background-color: #f5ff64;
+	overflow-x: hidden;
+	justify-content: center;
+}
+
+
+
+
+@keyframes inf_rotate{
+	0%{}
+	100%{transform: rotateZ(112deg);}
+}
+
+a{text-decoration: none;}
+
+/*HEADER & FOOTER*/
+/*HEADER____________________________*/
+header{width: 100%; height: 1vh; font-family: cursive; font-size: 1.4em;}
+
+header a{color: black; padding: 10%;}
+	header a:hover{font-size: 1.3em; color: #5026c2; border-radius: 10px;}
+header ul{display: flex; justify-content: space-evenly;}
+	header li{list-style: none; width: 10%;}
+		.liprofil{opacity: 0; position: absolute; z-index: -10;}
+		.licommentaire{opacity: 0; position: absolute; z-index: -10;}
+	
+/*FOOTER____________________________*/
+footer{
+	position: absolute; 
+	bottom: 0; 
+	display: flex; 
+	width: 100%; 
+	height: 10vh;
+	justify-content: space-between;
+	align-items: center;
+	background-color: black;
+	font-family: cursive;
+	font-size: 1.2em;
+}
+
+footer nav a{color: white;}
+	footer nav a:hover{text-decoration: underline;}
+footer .network{display: flex; width: 30%; margin-left: 10%;}
+	footer .network img{width: 50%; border-radius: 10px;}
+		footer .network img:hover{cursor: pointer; opacity: 0.8;}
+footer nav{display: flex; justify-content: space-evenly; width: 50%;}
+
+/*INDEX*/
+.mainindex{
+	display: flex; 
+	width: 100%; 
+	align-items: flex-start; 
+	font-family: cursive; 
+	font-size: 1.5em;
+	height: 60%;
+}
+	.mainindex article{width: 50%; text-align: center;}
+		.mainindex article img{width: 15%; animation: inf_rotate 6s infinite linear; margin-top: 10%;}
+	
+/*INSCRIPTION*/
+.maininscription{
+	display: flex; 
+	justify-content: space-evenly; 
+	width: 100%; 
+	font-family: cursive;
+	font-size: 1.5em;
+	background-color: #26c23b;
+	flex-direction: column;
+	align-items: center;
+	height: 60%;
+	box-shadow: 0 10px 20px black;
+}
+	.maininscription h2{font-size: 2em; margin: 0;}
+	.maininscription form{
+		display: flex; 
+		flex-direction: column; 
+		justify-content: center; 
+		align-items: center;
+		justify-content: center;
+		height: 60%;
+	}
+		.maininscription input[type="submit"], .maininscription form label{margin-top: 5vh;}
+		.maininscription input{border-radius: 10px;}
+
+/*CONNEXION*/
+.mainconnexion{
+	display: flex; 
+	justify-content: space-evenly; 
+	width: 100%; 
+	font-family: cursive;
+	font-size: 1.5em;
+	background-color: #26c2b5;
+	flex-direction: column;
+	align-items: center;
+	height: 60%;
+	box-shadow: 0 10px 20px black;
+}
+	.mainconnexion h2{font-size: 2em; margin: 0;}
+	.mainconnexion form{
+		display: flex; 
+		flex-direction: column; 
+		justify-content: center; 
+		align-items: center;
+		justify-content: center;
+		height: 60%;
+	}
+		.mainconnexion input[type="submit"], .mainconnexion form label{margin-top: 5vh;}
+		.mainconnexion input{border-radius: 10px;}
+
+/*COMMENTAIRE*/
+.maincommentaire{
+	display: flex; 
+	justify-content: center; 
+	width: 100%; 
+	font-family: cursive;
+	font-size: 1.5em;
+	background-color: #C2263E;
+	height: 60%;
+	box-shadow: 0 10px 20px black;
+	text-align: center;
+}
+	.maincommentaire form{display: flex; flex-direction: column; justify-content: center;}
+		.maincommentaire input, .maincommentaire textarea{border-radius: 10px;}
+		.maincommentaire textarea{width: 30vw; height: 15vh;}
+
+/*LIVRE D'OR*/
+.mainlivreor{
+	box-shadow: 10px 10px 30px black;
+	width: 80%;
+	background-color: rgb(255, 255, 255);
+	height: 60%;
+	overflow-y: scroll;
+}
+
+/*PROFIL*/
+.mainprofil{
+	display: flex; 
+	justify-content: space-evenly; 
+	width: 100%; 
+	font-family: cursive;
+	font-size: 1.5em;
+	background-color: #ec1031;
+	flex-direction: column;
+	align-items: center;
+	height: 60%;
+	box-shadow: 0 10px 20px black;
+}
+	.mainprofil h2{font-size: 2em; margin: 0;}
+	.mainprofil input{border-radius: 10px;}
